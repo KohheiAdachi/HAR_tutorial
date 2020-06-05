@@ -40,32 +40,35 @@ def run_ipynb(path):
         subprocess.check_output(args)
 
     os.chdir(orig_dir)
+
+
 class TestNotebooks(unittest.TestCase):
 
     def test_data_visualization(self):
-            this_dir = os.path.dirname(os.path.abspath(__file__))
-            run_ipynb(os.path.join(this_dir,
-                                'data_visualization.ipynb'))
+        this_dir = os.path.dirname(os.path.abspath(__file__))
+        run_ipynb(os.path.join(this_dir,
+                               'data_visualization.ipynb'))
 
     def test_Feature_Extraction(self):
-            this_dir = os.path.dirname(os.path.abspath(__file__))
-            run_ipynb(os.path.join(this_dir,
-                                'Feature-Extraction.ipynb'))
-    
+        this_dir = os.path.dirname(os.path.abspath(__file__))
+        run_ipynb(os.path.join(this_dir,
+                               'Feature-Extraction.ipynb'))
+
     def test_classification(self):
-            this_dir = os.path.dirname(os.path.abspath(__file__))
-            run_ipynb(os.path.join(this_dir,
-                                'classification.ipynb'))
-    
+        this_dir = os.path.dirname(os.path.abspath(__file__))
+        run_ipynb(os.path.join(this_dir,
+                               'classification.ipynb'))
+
     def test_pre_processing(self):
         this_dir = os.path.dirname(os.path.abspath(__file__))
         run_ipynb(os.path.join(this_dir,
-                            'pre-processing.ipynb'))
+                               'pre-processing.ipynb'))
 
     def test_segmentetaion(self):
         this_dir = os.path.dirname(os.path.abspath(__file__))
         run_ipynb(os.path.join(this_dir,
-                            'segmentetion.ipynb'))
+                               'segmentetion.ipynb'))
+
 
 if __name__ == "__main__":
     unittest.main()
