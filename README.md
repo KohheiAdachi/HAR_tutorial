@@ -1,5 +1,5 @@
 # Human Activity Recognition Tutorial
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KohheiAdachi/HAR_tutorial/master)
 ## slide
 https://docs.google.com/presentation/d/1JpVsu3k9SxY5YxEBFeQekrKSAp4kjgVyVy0ZtyyE6wg/edit?usp=sharing
 
