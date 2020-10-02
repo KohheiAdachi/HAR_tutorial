@@ -69,10 +69,16 @@ class TestNotebooks(unittest.TestCase):
         run_ipynb(os.path.join(this_dir,
                                'segmentetion.ipynb'))
 
-    def test_segmentetaion(self):
+    def test_feature_importances(self):
         this_dir = os.path.dirname(os.path.abspath(__file__))
         run_ipynb(os.path.join(this_dir,
-                               'classification_ngboost.ipynb'))
+                               'feature_importances.ipynb'))
+
+    def test_classification_DL(self):
+        this_dir = os.path.dirname(os.path.abspath(__file__))
+        run_ipynb(os.path.join(this_dir,
+                               'classification_DL.ipynb'))
+
 
 if __name__ == "__main__":
     unittest.main()
