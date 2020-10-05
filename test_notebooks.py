@@ -79,6 +79,11 @@ class TestNotebooks(unittest.TestCase):
         run_ipynb(os.path.join(this_dir,
                                'classification_DL.ipynb'))
 
+    def test_Features_extraction_using_tsfel(self):
+        this_dir = os.path.dirname(os.path.abspath(__file__))
+        run_ipynb(os.path.join(this_dir,
+                               'Features_extraction_using_tsfel.ipynb'))
+
 
 if __name__ == "__main__":
     unittest.main()
